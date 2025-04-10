@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "doors-entities",
+	"version": "${version}",
+	"name": "Doors Entities",
+	"description": "Roblox Doors entities remade into Minecraft!",
+	"authors": [
+		"DevSBA"
+	],
+	"contact": {
+		"homepage": "https://google.com",
+		"sources": "https://github.com"
+	},
+	"license": "MIT",
+	"icon": "assets/doors-entities/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sba.doors.DoorsEntities"
+		],
+		"fabric-datagen": [
+			"net.sba.doors.DoorsEntitiesDataGenerator"
+		],
+		"client": [
+			"net.sba.doors.DoorsEntitiesClient"
+		]
+	},
+	"mixins": [
+		"doors-entities.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
