@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 
 public class ModItems {
     public static final Item LIGHTER = registerItem("lighter", new Item(new Item.Settings()));
-
+    public static final Item CRUCIFIX = registerItem("crucifix", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(DoorsEntities.MOD_ID, name), item);
@@ -21,6 +21,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(LIGHTER);
+            entries.add(CRUCIFIX);
         });
     }
 }
